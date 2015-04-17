@@ -5,7 +5,17 @@ Another one full height trick.
 * jQuery 2.x
 
 ## Usage
-$(elements).fullheight();
+Simple call:
+```
+$('selector').fullheight();
+```
+or with options:
+```
+$('selector').fullheight({
+  container: '.layout',
+  property: 'height'
+});
+```
 
 ## Options
 * debug [Boolean] Log to console;
