@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru_RU" dir="ltr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+	<title>Landing Demo</title>
+	<style>
+	html, body {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100%;
+	}
+	.article {
+		overflow: hidden;
+		transition: all 0.5s ease-out 0s;
+	}
+	.article-title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	#one {
+		background-color: lightyellow;
+	}
+	#two {
+		background-color: aquamarine;
+	}
+	#three {
+		background-color: darksalmon;
+	}
+	</style>
+</head>
+<body>
+	<article id="one" class="article fullheight">
+		<h1 class="article-title">Article One</h1>
+	</article>
+	<article id="two" class="article fullheight">
+		<h1 class="article-title">Article Two</h1>
+	</article>
+	<article id="three" class="article fullheight" data-fullheight-property="height">
+		<h1 class="article-title">Article Three</h1>
+	</article>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../jquery-fullheight.js"></script>
+	<script>
+		$('.fullheight').fullheight({
+			debug: true
+		});
+	</script>
+</body>
+</html>
