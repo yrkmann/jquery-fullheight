@@ -10,7 +10,7 @@ var path = {
 gulp.task('scripts', ['jshint', 'jscs'], function () {
 	return gulp.src([path.src + '**/*.js'])
 		.pipe($.sourcemaps.init())
-		.pipe($.uglify())
+		.pipe($.uglify({preserveComments: 'some'}))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest(path.dist));
 });

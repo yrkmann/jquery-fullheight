@@ -1,4 +1,12 @@
-(function ($) {
+/*!
+ * jQuery FullHeight v1.0.0
+ * https://github.com/yrkup3/jquery-fullheight
+ *
+ * Copyright (c) 2015 Andrey Pervakov
+ * Licensed under the MIT license.
+ */
+
+ (function ($) {
 
 	'use strict';
 
