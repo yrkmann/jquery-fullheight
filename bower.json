@@ -1,0 +1,24 @@
+{
+  "name": "jquery-fullheight",
+  "description": "Another one full height trick.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/yrkup3/jquery-fullheight",
+  "private": false,
+  "authors": [
+    "Andrey Pervakov <yrkup3@gmail.com> (http://yrkup3.dev.jagmort.com/)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yrkup3/jquery-fullheight.git"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "fullheight"
+  ],
+  "main": "src/jquery-fullheight.js",
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
