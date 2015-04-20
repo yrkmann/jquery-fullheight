@@ -1,4 +1,4 @@
-# jquery-fullheight
+# jQuery FullHeight v1.0.0
 Another one full height trick.
 
 ## Requirements
