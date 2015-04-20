@@ -7,7 +7,7 @@ var path = {
 	dist: 'dist/',
 };
 
-gulp.task('scripts', ['jshint'], function () {
+gulp.task('scripts', ['jshint', 'jscs'], function () {
 	return gulp.src([path.src + '**/*.js'])
 		.pipe($.sourcemaps.init())
 		.pipe($.uglify())
@@ -33,17 +33,21 @@ gulp.task('jscs', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch([path.src + '**/*.js'], ['jshint', 'jscs', 'scripts']);
+	gulp.watch([path.src + '**/*.js'], ['scripts']);
 	gulp.watch(['bower.json'], ['build']);
 });
 
 gulp.task('clean', function () {
-	require('del')([
-		path.dist
-	]);
+	require('del')([path.dist]);
 });
 
-gulp.task('build', ['scripts']);
+gulp.task('test', function () {
+	gulp.start(['jshint', 'jscs']);
+});
+
+gulp.task('build', function () {
+	gulp.start('scripts');
+});
 
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');
