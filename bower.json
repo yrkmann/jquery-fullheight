@@ -18,6 +18,17 @@
     "fullheight"
   ],
   "main": "src/jquery-fullheight.js",
+  "ignore": [
+    "examples",
+    "src",
+    ".bowerrc",
+    ".gitignore",
+    ".jscsrc",
+    "LICENSE",
+    "README.md",
+    "gulpfile.js",
+    "package.json"
+  ],
   "dependencies": {
     "jquery": "~2.1.3"
   }
