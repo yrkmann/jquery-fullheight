@@ -70,7 +70,7 @@
 
 	FullHeight.prototype.update = function () {
 		if (this.debug) {
-			console.log('update');
+			console.log('update', this.el);
 		}
 		var newHeight;
 		var offset = this.container.offset();
