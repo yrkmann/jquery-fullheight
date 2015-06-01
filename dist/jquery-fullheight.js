@@ -1,5 +1,5 @@
 /*!
- * jQuery FullHeight v1.0.6
+ * jQuery FullHeight v1.0.8
  * https://github.com/yrkup3/jquery-fullheight
  * Copyright (c) 2015 Andrey Pervakov
  * Licensed under the MIT license.

@@ -1,14 +1,14 @@
 {
   "name": "jquery-fullheight",
   "description": "Another one full height trick.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "jquery-plugin",
     "fullheight"
   ],
   "homepage": "https://github.com/yrkup3/jquery-fullheight",
   "authors": [
-    "Andrey Pervakov <yrkup3@gmail.com> (http://yrkup3.dev.jagmort.com/)"
+    "Andrey Pervakov <yrkup3@gmail.com> (http://yrkup3.jagmort.com/)"
   ],
   "license": "MIT",
   "repository": {
